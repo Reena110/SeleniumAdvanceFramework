@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ADMIN/IdeaProjects/SeleniumAdvanceFramework">
+        <classes>
+            <class name="com.TheTestingAcademy.tests.pageFactory.TestVWOLogin_PF">
+                <methods>
+                    <include name="testLoginNegativeVWO_PF"/>
+                </methods>
+            </class>
+            <class name="com.TheTestingAcademy.tests.pageObjectModelTest.TestVWOLogin_01_NormalScript_POM">
+                <methods>
+                    <include name="test_negative_vwo_login"/>
+                    <include name="testLoginPositiveVWO"/>
+                </methods>
+            </class>
+            <class name="com.TheTestingAcademy.tests.pageObjectModelTest.TestVWOLogin_02_PropertyReader_DriverManager_POM_CommonToAll">
+                <methods>
+                    <include name="test_negative_vwo_login"/>
+                    <include name="testLoginPositiveVWO"/>
+                </methods>
+            </class>
+            <class name="com.TheTestingAcademy.tests.pageObjectModelTest.TestVWOLogin_03_Retry">
+                <methods>
+                    <include name="testFail"/>
+                    <include name="testPass"/>
+                </methods>
+            </class>
+            <class name="com.TheTestingAcademy.tests.sample.TestCaseBoilerPlate">
+                <methods>
+                    <include name="test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
